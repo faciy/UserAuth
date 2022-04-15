@@ -11,6 +11,11 @@ import { UserModule } from './user/user.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url : process.env.DATABASE_URL,
+      // host: 'postgres',
+      // port: 5432,
+      // username: 'postgres',
+      // password: 'root',
+      // database: 'projet',
       autoLoadEntities: true,
       synchronize : true
 
